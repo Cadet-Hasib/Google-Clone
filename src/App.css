@@ -1,0 +1,78 @@
+.home_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+header{
+    line-height: 50px;
+    max-width: 1000px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1{
+    color: white;
+    user-select: none;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+i{
+    font-size: 25px;
+    color: #000;
+    margin-top: 13px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.AppsIcons{
+    transform: scale(1.5);
+    color: #000;
+    margin-top: 13px;
+}
+
+.Avatar{
+    margin-top: 5px;
+}
+
+.input{
+    margin-top: 15px;
+    display: flex;
+    border: 1px solid #e1e2e3;
+    border-radius: 40px;
+    align-items: center;
+    width: 100%;
+}
+
+.input input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 100%;
+    width: 480px;
+    padding: 10px 0px;
+}
+
+.input svg{
+    transform: scale(1.4);
+    margin-left: 13px;
+    margin-right: 13px;
+}
