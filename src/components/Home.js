@@ -18,9 +18,9 @@ const Home = () => {
                         <MicIcon />
                     </div>
                     
-                    <div className="home__group">
-                        <input type="submit" value="Google Search" />
-                        <input type="submit" value="I'm Feeling Lucky" />
+                    <div className="buttons">
+                        <button type="submit" value="Google Search">Google Search</button>
+                        <button type="submit" value="I'm Feeling Lucky">I'm feeling Lucky</button>
                     </div>
                 </form>
             </div>
