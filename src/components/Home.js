@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './Header'
 import SearchSharpIcon from '@material-ui/icons/SearchSharp';
 import MicIcon from '@material-ui/icons/Mic';
 
-const Home = () => {
+const Home = (props) => {
+
+    const [state, setState] = useState("")
+
+    const searchGoogle = (e) => {
+        props.history.push({ pathname: "/search", state: state })
+    }
+
     return (
         <div className="Home">
             <Header />
@@ -11,10 +18,10 @@ const Home = () => {
                 <div className="home__logo">
                     <img src="/Images/Logo.png" alt="Logo" />
                 </div>
-                <form className="home__form">
+                <form className="home__form" onSubmit={searchGoogle}>
                     <div className="input">
                         <SearchSharpIcon />
-                        <input type="text" className="home__input" />
+                        <input type="text" className="home__input" onChange={(e) => setState(e.target.value)} value={state} required />
                         <MicIcon />
                     </div>
                     

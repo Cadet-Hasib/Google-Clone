@@ -36,6 +36,7 @@ i{
     font-size: 25px;
     color: #000;
     margin-top: 13px;
+    cursor: pointer;
 }
 
 nav ul li a{
@@ -75,6 +76,7 @@ nav ul li a{
     transform: scale(1.4);
     margin-left: 13px;
     margin-right: 13px;
+    cursor: pointer;
 }
 
 .buttons{
@@ -92,4 +94,5 @@ button{
     border: none;
     outline: none;
     font-size: 15px;
+    cursor: pointer;
 }
