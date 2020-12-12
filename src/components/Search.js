@@ -4,6 +4,8 @@ import MicIcon from '@material-ui/icons/Mic';
 import { key, cx } from "../API";
 import axios from "axios";
 import Show from "./Show";
+import SearchIcon from '@material-ui/icons/Search';
+
 const Search = (props) => {
     const goBack = () => {
         props.history.push("/");
@@ -54,12 +56,38 @@ const Search = (props) => {
                 </div>
                 <div className="search__form-input">
                     <form className="home__form" onSubmit={searchGoogle}>
-                        <div className="input">
-                            <SearchSharpIcon className="search__icon" />
-                            <input type="text" className="home__input" value={state} onChange={(e) => setState(e.target.value)} required />
+                        <div className="home__input__item">
+                            <input type="text" className="home__input" spellCheck="false" value={state} onChange={(e) => setState(e.target.value)} required />
                             <MicIcon className="microphone" />
+                            <SearchSharpIcon className="search__icon" />
                         </div>
                     </form>
+                    <div className="misc">
+                        <div className="misc_component">
+                            <SearchIcon />
+                            <p>All</p>
+                        </div>
+                        <div className="misc_component">
+                            <SearchIcon />
+                            <p>All</p>
+                        </div>
+                        <div className="misc_component">
+                            <SearchIcon />
+                            <p>All</p>
+                        </div>
+                        <div className="misc_component">
+                            <SearchIcon />
+                            <p>All</p>
+                        </div>
+                        <div className="misc_component">
+                            <SearchIcon />
+                            <p>All</p>
+                        </div>
+                        <div className="misc_component">
+                            <SearchIcon />
+                            <p>All</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Show results={results} info={info} />

@@ -97,3 +97,48 @@ button{
     cursor: pointer;
 }
 
+.home__input__item{
+    display: flex;
+    border: 1px solid #e1e2e3;
+    border-radius: 40px;
+    align-items: center;
+    width: 150%;
+}
+
+.home__input__item input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.home__input__item svg{
+    transform: scale(1.1);
+    margin-left: 13px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+.search__form-logo img{
+    width: 100px;
+    margin-right: 40px;
+}
+
+.search__form{
+    display: flex;
+    margin: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.misc_component{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.misc{
+    display: flex;
+    margin-top: 20px;
+}
