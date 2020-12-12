@@ -5,6 +5,11 @@ import { key, cx } from "../API";
 import axios from "axios";
 import Show from "./Show";
 import SearchIcon from '@material-ui/icons/Search';
+import ImageIcon from '@material-ui/icons/Image';
+import ClassIcon from '@material-ui/icons/Class';
+import ChromeReaderModeIcon from '@material-ui/icons/ChromeReaderMode';
+import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const Search = (props) => {
     const goBack = () => {
@@ -63,29 +68,29 @@ const Search = (props) => {
                         </div>
                     </form>
                     <div className="misc">
-                        <div className="misc_component">
+                        <div className="misc_component active">
                             <SearchIcon />
                             <p>All</p>
                         </div>
                         <div className="misc_component">
-                            <SearchIcon />
-                            <p>All</p>
+                            <ImageIcon />
+                            <p>Images</p>
                         </div>
                         <div className="misc_component">
-                            <SearchIcon />
-                            <p>All</p>
+                            <ChromeReaderModeIcon />
+                            <p>News</p>
                         </div>
                         <div className="misc_component">
-                            <SearchIcon />
-                            <p>All</p>
+                            <ClassIcon />
+                            <p>Books</p>
                         </div>
                         <div className="misc_component">
-                            <SearchIcon />
-                            <p>All</p>
+                            <VideoLibraryIcon />
+                            <p>Videos</p>
                         </div>
                         <div className="misc_component">
-                            <SearchIcon />
-                            <p>All</p>
+                            <MoreVertIcon />
+                            <p>More</p>
                         </div>
                     </div>
                 </div>

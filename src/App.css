@@ -102,7 +102,7 @@ button{
     border: 1px solid #e1e2e3;
     border-radius: 40px;
     align-items: center;
-    width: 150%;
+    width: 100%;
 }
 
 .home__input__item input{
@@ -124,6 +124,7 @@ button{
 .search__form-logo img{
     width: 100px;
     margin-right: 40px;
+    margin-top: 5px;
 }
 
 .search__form{
@@ -136,9 +137,57 @@ button{
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
 }
 
 .misc{
     display: flex;
     margin-top: 20px;
+}
+
+.misc_component p{
+    margin-left: 5px;
+}
+
+.misc_component.active{
+    border-bottom: 2px solid #2e81f4;
+}
+
+.misc_component svg{
+    color: gray;
+    transform: scale(0.9);
+}
+
+.show {
+    margin: 20px 0;
+    margin-left: 170px;
+    width: 700px;
+}
+.show__info {
+    color: silver;
+    font-weight: normal;
+    font-size: 14px;
+}
+.show__details {
+    margin-top: 25px;
+}
+.show__link {
+    margin-bottom: 5px;
+}
+.show__link a {
+    color: #3c4043;
+    text-decoration: none;
+}
+.show__title {
+    margin-bottom: 10px;
+}
+.show__title a {
+    font-size: 20px;
+    color: #1a0dab;
+    text-decoration: none;
+}
+.show__description {
+    color: #3c4043;
+    font-size: 14px;
 }
